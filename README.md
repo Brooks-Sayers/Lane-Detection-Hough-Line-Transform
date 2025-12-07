@@ -1,2 +1,2 @@
 # Lane-Detection-Hough-Line-Transform
-A lane detection model, using the Hough Line Transform paired with color thresholding, Gaussian blur, Canny edge detection, and region-of-interest masking.
+This was my first attempt at creating a lane detection model, using the Hough Line Transform paired with color thresholding, Gaussian blur, Canny edge detection, and region-of-interest masking. I found the results satisfactory, given that this is a very new concept to me; however, I know this would produce better results once layered with other methods of lane detection. Nonetheless, this was a great learning opportunity, and I look forward to researching autonomous driving vehicles further.
