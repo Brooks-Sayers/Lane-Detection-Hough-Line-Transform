@@ -23,7 +23,6 @@ def hough_line_transform(masked_canny_image, raw_image, roi_mask):
         maxLineGap = (height*0.02)
     )
 
-    if lines is not None: # Reality check to ensure the array (lines) is created before attempting to cycle through it
     if lines is not None: 
         for line in lines:
             x1, y1, x2, y2 = line.reshape(4)
