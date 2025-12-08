@@ -110,9 +110,9 @@ def process_frame(frame):
     raw_image = frame_bgr.copy()
     image_to_edit = frame_bgr.copy()
 
-    _, adjusted_image, _ = color_threshold(image_to_edit, raw_image)
+    _, adjusted_frame, _ = color_threshold(image_to_edit, raw_image)
 
-    return cv.cvtColor(adjusted_image, cv.COLOR_BGR2RGB)
+    return cv.cvtColor(adjusted_frame, cv.COLOR_BGR2RGB)
 
 
 def plot_image(img):
