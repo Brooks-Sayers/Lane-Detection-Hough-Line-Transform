@@ -102,9 +102,9 @@ def color_threshold(image_to_edit, raw_image):
 
 def process_frame(frame):
     # Process each video frame individually from video given: resize, color-threshold, Gaussian blur, Canny edge, apply ROI, Hough transform, and draw lane lines
-    h, w = frame.shape[:2]
-    scale = TARGET_WIDTH / w
-    frame = cv.resize(frame, (TARGET_WIDTH, int(h * scale)))
+    height, width = frame.shape[:2]
+    scale = TARGET_WIDTH / width
+    frame = cv.resize(frame, (TARGET_WIDTH, int(height * scale)))
 
     frame_bgr = cv.cvtColor(frame, cv.COLOR_RGB2BGR)
     raw_image = frame_bgr.copy()
