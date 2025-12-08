@@ -68,10 +68,10 @@ def color_threshold(image_to_edit, raw_image):
     hls_image = cv.cvtColor(image_to_edit, cv.COLOR_BGR2HLS)
     _, L, S = cv.split(hls_image)
 
-    h_img = L.shape[0]
+    height = L.shape[0]
 
-    road_lightness = L[int(h_img*0.5):, :]
-    road_saturation = S[int(h_img*0.5):, :]
+    road_lightness = L[int(height*0.5):, :]
+    road_saturation = S[int(height*0.5):, :]
 
     l_thresh = np.percentile(road_lightness, 94)
     l_thresh = int(np.clip(l_thresh, 0, 255))
