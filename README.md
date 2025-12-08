@@ -3,7 +3,7 @@ This was my first attempt at building a lane detection model, using the **Probab
 
 
 ## Features
-- Detects lane lines in both **images (.png, .jpg)** and **videos (.mp4)**
+- Detects lane lines in both **images (.png; .jpg)** and **videos (.mp4)**
 - Uses **dynamic color thresholding** to adapt to different lightness/saturation environments
 - Region-of-interest masking removes irrelevant noise outside the road
 - Uses **HoughLinesP** to estimate lane segments and then **line()** to draw them onto the frame
