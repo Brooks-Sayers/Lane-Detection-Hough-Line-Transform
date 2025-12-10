@@ -206,9 +206,9 @@ def gaussian_blur_and_canny(combined_mask, raw_image):
 </details>
 
   
-### (5) `color_threshold()`
+### (5) `region_of_interest()`
 <details>
-      <summary>Click to view code snippet color_threshold()</summary>
+      <summary>Click to view code snippet region_of_interest()</summary>
   
   ```python
 def region_of_interest(canny_edges, raw_image):
